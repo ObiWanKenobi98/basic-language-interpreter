@@ -1,0 +1,21 @@
+	In implementarea temei am folosit liste si liste de perechi, memorand informatiile
+specificate despre functiile si variabilele unei clase. Am definit si functii pentru a 
+accesa mai usor campurile unei clase (pentru a evita pattern matching-ul kilometric). Am
+folosit apoi clasa astfel definita pentru a reprezenta un program ca fiind o colectie de
+clase, carora li se adauga clasa implicita (Global). Construind functia de inserare pentru
+functii si variabile in clase, am putut efectua si interpretarea unei anumite instructiuni,
+in mare parte, pe baza functiilor scrise anterior. Formatul parametrilor este usor diferit,
+asa ca am scris si functii pentru a adapta reprezentarea interna a datelor cu datele de
+intrare/ iesire. Pentru parsarea inputului, l-am separat dupa caracterele irelevante
+pentru interpretare (cum ar fi spatii si alte simboluri). Am interpretat apoi fiecare
+rand ca fiind o instructiune individuala (adaugarea unei noi clase, a unei noi functii
+sau a unei noi variabile), fiecare tip de instructiune avand informatii diferite ce vor
+trebui introduce in program. 
+	La interpretarea fiecarei instructiuni, in functie de tipul sau, am verificat
+redundanta datelor in program si corectitudinea inputului inainte de adaugarea informatiilor
+in program. In ceea ce priveste inferenta tipului unei expresii, am urmat instructiunile
+din enuntul temei, tratand separat cazurile in care expresia este o variabila sau o functie.
+Daca parametri functiei (cei pe care i-am gasit in cadrul unei clase din program) difera
+de rezultatul obtinut in urma inferentei pe fiecare parametru al sau, am scris functii
+pentru a obtine toate functiile de pe lantul de mostenire al clasei in care am gasit prima
+oara functia si pentru a compara parametri acestora cu cei obtinuti in urma evaluarii.
